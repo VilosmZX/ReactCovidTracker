@@ -9,11 +9,7 @@ import { convertTime } from '../';
 
 const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
     if (!confirmed) {
-        return (
-            <div className={styles.loading}>
-                Memuat...
-            </div>
-        );
+        return 'loading...';
     }
 
     return (
